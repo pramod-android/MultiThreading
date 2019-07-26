@@ -82,6 +82,13 @@ public class Main {
 		
 	});
 		
+	// Set priority
+	thread1.setPriority(Thread.MIN_PRIORITY);
+	thread2.setPriority(Thread.MAX_PRIORITY);
+	
+	// set Name and get name
+	thread1.setName("first thread");
+	System.out.println(thread1.getName());
 		
 		thread1.start();
 		try {Thread.sleep(10);} catch (InterruptedException e) {}
