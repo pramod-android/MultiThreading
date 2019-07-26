@@ -1,9 +1,12 @@
-package usingClass;
+package usingRunnableInterface;
 
-public class ThreadOne extends Thread {
+public class Thread2 implements Runnable {
+
+	@Override
 	public void run() {
+
 		for(int i=0;i<5;i++) {
-		System.out.println("Hi");
+		System.out.println("Hello!");
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
@@ -12,5 +15,6 @@ public class ThreadOne extends Thread {
 		}
 		}
 	}
+	
 
 }
